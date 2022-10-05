@@ -174,7 +174,7 @@ impl InstallerApp {
                     Message::SelectDir => {
                         let selected_dir = dialog::run_select_dir_dlg(styles::SEL_DIR_DLG_PROMPT);
                         if !utils::is_valid_ddlc_dir(&selected_dir) {
-                            dialog::run_msg_dlg("Attention!\nSelected directory doesn't appear to be\na valid DDLC directory");
+                            dialog::run_msg_dlg("注意!\n选择的文件夹不是正确的DDLC文件夹!");
                         }
                         self.set_extraction_dir(selected_dir);
                     },
@@ -215,7 +215,7 @@ impl InstallerApp {
                         let app_state = self.state.lock().unwrap();
                         // We warn the user again if the extraction dir looks wrong
                         if !utils::is_valid_ddlc_dir(app_state.get_extraction_dir()) {
-                            dialog::run_msg_dlg("Attention!\nInstalling into a non-DDLC directory");
+                            dialog::run_msg_dlg("注意!\n安装目标文件夹不是DDLC的文件夹!");
                         }
                         // We also need to move to the next window
                         self.sender.send(Message::NextPage);
@@ -230,27 +230,27 @@ impl InstallerApp {
                     },
                     Message::Preparing => {
                         println!("Preparing...");
-                        self.progress_bar.set_label("Preparing...");
+                        self.progress_bar.set_label("准备中...");
                     },
                     Message::Downloading => {
                         println!("Done!\nDownloading...");
-                        self.progress_bar.set_label("Downloading...");
+                        self.progress_bar.set_label("下载中...");
                     },
                     Message::Extracting => {
                         println!("Done!\nExtracting...");
-                        self.progress_bar.set_label("Extracting...");
+                        self.progress_bar.set_label("解压中...");
                     },
                     Message::DownloadingSpr => {
                         println!("Done!\nDownloading spritepacks...");
-                        self.progress_bar.set_label("Downloading spritepacks...");
+                        self.progress_bar.set_label("下载精灵包...");
                     },
                     Message::ExtractingSpr => {
                         println!("Done!\nExtracting spritepacks...");
-                        self.progress_bar.set_label("Extracting spritepacks...");
+                        self.progress_bar.set_label("解压精灵包...");
                     },
                     Message::CleaningUp => {
                         println!("Done!\nCleaning up...");
-                        self.progress_bar.set_label("Cleaning up...");
+                        self.progress_bar.set_label("清除缓存...");
                     },
                     Message::Error => {
                         println!("An error has occurred...");

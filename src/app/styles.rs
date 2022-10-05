@@ -14,11 +14,11 @@ use lazy_static::lazy_static;
 
 
 // App title
-pub const WIN_TITLE: &str = "Monika After Story Installer";
+pub const WIN_TITLE: &str = "Monika After Story 安装器";
 // Err window title
-pub const ALERT_WIN_TITLE: &str = "Error!";
+pub const ALERT_WIN_TITLE: &str = "错误!";
 // Msg window title
-pub const MSG_WIN_TITLE: &str = "Attention!";
+pub const MSG_WIN_TITLE: &str = "注意!";
 
 
 // Window consts
@@ -70,17 +70,17 @@ pub const BUT_SPACING: i32 = 5;
 pub const BUT_FONT_SIZE: i32 = 16;
 pub const BUT_FONT: Font = Font::HelveticaBold;
 
-pub const BUT_ABORT_LABEL: &str = "Abort";
-pub const BUT_BACK_LABEL: &str = "@< Back ";
-pub const BUT_CONTINUE_LABEL: &str = " Continue@>";
-pub const BUT_SELECT_DIR_LABEL: &str = "Browse @fileopen";
-pub const BUT_DLX_VER_CHECK_LABEL: &str = "Deluxe version (pre-installed spritepacks)";
-pub const BUT_INSTALL_SPR_CHECK_LABEL: &str = "Download spritepacks (separate download into '/spritepacks')";
-pub const BUT_INSTALL_LABEL: &str = "Install";
-pub const BUT_OK_LABEL: &str = "Ok";
-pub const BUT_EXIT_LABEL: &str = "Exit";
-pub const BUT_CREDITS_LABEL: &str = "MyNewSoundtrack\nYouTube channel";
-pub const BUT_CHANGELOG_LABEL: &str = "Changelog";
+pub const BUT_ABORT_LABEL: &str = "取消";
+pub const BUT_BACK_LABEL: &str = "@< 返回 ";
+pub const BUT_CONTINUE_LABEL: &str = " 继续@>";
+pub const BUT_SELECT_DIR_LABEL: &str = "浏览 @fileopen";
+pub const BUT_DLX_VER_CHECK_LABEL: &str = "豪华版 (预安装精灵包)";
+pub const BUT_INSTALL_SPR_CHECK_LABEL: &str = "下载精灵包 (另外下载到 '/spritepacks')";
+pub const BUT_INSTALL_LABEL: &str = "安装";
+pub const BUT_OK_LABEL: &str = "确认";
+pub const BUT_EXIT_LABEL: &str = "退出";
+pub const BUT_CREDITS_LABEL: &str = "MyNewSoundtrack\nYouTube 频道";
+pub const BUT_CHANGELOG_LABEL: &str = "更新日志";
 
 pub const BUT_ALERT_WIN_PADDING: i32 = 10;
 pub const BUT_MSG_WIN_PADDING: i32 = BUT_ALERT_WIN_PADDING;
@@ -123,7 +123,7 @@ pub const SEL_DIR_TXT_WIDTH: i32 = INNER_WIN_WIDTH - 2*INNER_WIN_CONTENT_XPADDIN
 pub const SEL_DIR_TXT_HEIGHT: i32 = 28;
 pub const SEL_DIR_TXT_SIZE: i32 = 18;
 
-pub const SEL_DIR_DLG_PROMPT: &str = "Select Doki Doki Literature Club directory";
+pub const SEL_DIR_DLG_PROMPT: &str = "选择一个 Doki Doki Literature Club 文件夹";
 
 pub const LABEL_SIZE_LARGE: i32 = 28;
 pub const LABEL_SIZE_MED: i32 = 20;
@@ -161,27 +161,26 @@ pub const C_BRIGHT_GREEN: Color = Color::from_hex(0x00ff00);
 
 
 // Raw text
-pub const WELCOME_TOP_FRAME_LABEL: &str = "Welcome to MAS installer";
+pub const WELCOME_TOP_FRAME_LABEL: &str = "欢迎使用 MAS 安装器";
 pub const WELCOME_MID_FRAME_LABEL: &str = concat!(
-    "This program will install the latest version\n",
-    "of the Monika After Story mod\n",
-    "on your computer"
+    "这个程序将自动安装\n",
+    "Monika After Story mod 在你的PC上",
 );
-pub const LICENSE_FRAME_LABEL: &str = "By continuing you agree with our license";
-pub const SELECT_DIR_FRAME_LABEL: &str = "Select Doki Doki Literature Club directory";
-pub const OPTIONS_FRAME_LABEL: &str = "Select additional settings";
-pub const PROGRESS_FRAME_LABEL: &str = "Installing. Please wait";
-pub const ABORT_TOP_FRAME_LABEL: &str = "Aborted";
+pub const LICENSE_FRAME_LABEL: &str = "您需要同意我们的条款才能继续";
+pub const SELECT_DIR_FRAME_LABEL: &str = "选择一个 Doki Doki Literature Club 文件夹";
+pub const OPTIONS_FRAME_LABEL: &str = "设置其它安装项";
+pub const PROGRESS_FRAME_LABEL: &str = "正在安装, 请稍后...";
+pub const ABORT_TOP_FRAME_LABEL: &str = "已取消";
 pub const ABORT_MID_FRAME_LABEL: &str = concat!(
-    "Installation has been aborted.\n",
-    "Any already extracted files will remain"
+    "安装已经取消.\n",
+    "任何已被安装的文件将被保留"
 );
 pub const DONE_TOP_FRAME_LABEL: &str = "Finished";
 pub const DONE_MID_FRAME_LABEL: &str = concat!(
-    "Monika After Story has been successfully\n",
-    "installed on your computer"
+    "Monika After Story 已经成功安装在\n",
+    "你的电脑上"
 );
-pub const CREDITS_FRAME_LABEL: &str = "Installer theme by MyNewSoundtrack";
+pub const CREDITS_FRAME_LABEL: &str = "安装器主题 by MyNewSoundtrack";
 
 
 // Define images
